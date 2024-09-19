@@ -2,7 +2,7 @@
 #
 # Stappenplan:
 #
-# 1. Maak een variable "random_getal" en geef deze een willekeurige integer waarde tussen 1 en 10.
+# 1. Maak een variabele "random_getal" en geef deze een willekeurige integer waarde tussen 1 en 10.
 # 2. Vraag de gebruiker om het getal te raden
 # 3. Gebruik een while-loop die blijft draaien zolang de gebruiker het verkeerde getal raadt.
 # 4. Geef feedback of de ingevoerde waarde te hoog of te laag is.
@@ -12,3 +12,14 @@
 # en deze zo ook voor jezelf geheim te houden.
 
 
+correct_number = 8
+user_guess = None
+
+while user_guess != correct_number:
+    user_guess = int(input("Raad het getal tussen 1 en 10: "))
+    if user_guess < correct_number:
+        print("Te laag!")
+    elif user_guess > correct_number:
+        print("Te hoog!")
+    else:
+        print("Gefeliciteerd, je hebt het geraden!")

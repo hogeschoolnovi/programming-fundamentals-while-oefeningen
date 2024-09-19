@@ -7,3 +7,22 @@
 # 3. Gebruik een while-loop om de gebruiker maximaal 3 kansen te geven om het juiste wachtwoord in te voeren.
 # 4. Als de gebruiker het juiste wachtwoord invoert, beëindig dan de loop met een succesbericht.
 # 5. Als de gebruiker na 3 pogingen nog steeds het verkeerde wachtwoord invoert, geef een foutmelding.
+
+
+correct_password = "python123"
+attempts = 0
+max_attempts = 3
+
+while attempts < max_attempts:
+    user_input = input("Voer je wachtwoord in: ")
+    if user_input == correct_password:
+        print("Toegang verleend!")
+        break
+    else:
+        attempts += 1
+        print(f"Onjuist wachtwoord! Poging {attempts}/{max_attempts}")
+
+if attempts == max_attempts:
+    print("Toegang geweigerd.")
+
+
