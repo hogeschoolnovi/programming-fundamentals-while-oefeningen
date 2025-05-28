@@ -7,3 +7,5 @@
 # 3. Gebruik een while-loop om de gebruiker maximaal 3 kansen te geven om het juiste wachtwoord in te voeren.
 # 4. Als de gebruiker het juiste wachtwoord invoert, beëindig dan de loop met een succesbericht.
 # 5. Als de gebruiker na 3 pogingen nog steeds het verkeerde wachtwoord invoert, geef een foutmelding.
+
+print("passwords")
